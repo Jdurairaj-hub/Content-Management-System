@@ -1,0 +1,124 @@
+* This website mainly focuses the how the home page (index.php) works and how it leads to subpages 
+
+ 
+* In this assignment we adapted bootstraps pages to create six types of templets
+
+
+- index.php
+	
+the home page of the website
+changed the title and nav bar from index.html (bootstrap) and other changes as per instructions
+
+- about.php
+
+a page that details how the site began and its founders
+updated the title and nav bar then removed the blue button and other information which were not required. 
+
+- artists.php
+
+a page that displays all the artists who contribute to the site 
+adapted from about.html and removed everything expect the team and updated the name as our artists.
+
+A2-
+we changed the artists page by linking it to the aboutartists.php 
+
+- collections_T.php
+
+a page which displays the collections of art by theme
+updated the index.html file by removing everything expect the blog cards. Updated the blog cards and included 3 more cards to the page. 
+
+linked the collection page with the themes.csv file and displayed the themes 
+
+- signin.php
+
+a page which allows the user to sign in or sign up 
+updated it from contact.html
+removed all the tabs except top two form inputs and changed it to username and password
+
+- aboutArtists.php
+
+this page is linked with the artists.php and displays the artists information
+
+
+A2 changes from A1-
+created aboutArtists.php, themes.php pages, updated all the php files, modified post.php. 
+
+
+
+Changes from A2 to A3-
+
+
+Instead of using csv files we created a database called artbyyou which has 4 tables.
+artists
+about
+artwork
+themes
+
+index.php - 
+
+updated the index.php page (Home page), used a given image from the ppt files and posted it in the home page.
+Connected it to the database using object-oriented
+
+artists.php - 
+
+updated the old csv files and connected the artists page to the database and displayed all the artists.
+Linked this page to the aboutArtists.php page
+
+aboutArtists.php - 
+
+connected to the new database from csv files and displayed everything using 2 php scripts 
+
+collections_T.php - 
+
+connected to the new database and linked the page to the themes.php page
+
+themes.php - 
+
+connected the themes.php page to the themes table in artbyyou database
+
+post.php -
+
+created a post page so that artists can post their images but unable to display the page as required.
+
+
+
+Changes from A3 to A4
+
+signin.php -
+
+Added sessions to start of the php files. Connected the page with the database and checked if the username and password matches the database. 
+Made a create account button so the user can create a new account and post their artwork.
+
+createAccount.php -
+
+Made the createAccount page which is connected to the signin page and gives the user the option to create new account.
+
+post.php - 
+
+Used session and updated the post page so that the database gets updated.
+
+Nav Bar -
+
+updated the dropdown for sign in page for the nav bar so that the user can sign out and signin.
+
+
+Changed from A4 to A5
+
+createAccount.php -
+made sure that account are created properly. It uses regular expressions to create a secure password.
+It saves hashed password to the signin table in the db using password_hash method.
+
+Signin.php -
+updated the password checker  with the password_verify method.
+
+Post.php - 
+check if the theme exists and adds new post to the themes. if the themes doesn't exist it creates a new folder for theme
+and saves up all the information in that folder than displays.
+
+Citation - 
+
+1. Lorem Ipsum. (n.d.). Retrieved Feburary 26, 2023,
+   from http://www.lipsum.com. 
+2. Start Bootstrap. (n.d.). Modern Business. Retrieved Feburary 26, 2023,
+   from https://startbootstrap.com/previews/modern-business.
+3. Microsoft. (n.d.). Photos [Computer software]. Retrieved March 15, 2023, from https://www.microsoft.com/en-us/p/microsoft-photos/9wzdncrfjbh4
